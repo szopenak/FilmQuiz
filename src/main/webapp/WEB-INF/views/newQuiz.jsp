@@ -43,8 +43,43 @@
 	  </div>
 	</nav>
 	
-<p>WELCOME</p>
-<span>WTF</span>
+
+
+		<section class="container">
+			<form:form modelAttribute="newQuiz" class="form-horizontal">
+			<form:errors path="*" cssClass="alert alert-danger" element="div"/>
+				<fieldset>
+					<legend>Stworz wlasny quiz!</legend>
+						<div class="form-group">
+							<label class="control-label col-lg-2 col-lg-2" for="title">
+							Nazwa:
+							</label>
+								<div class="col-lg-10">
+								<form:input id="title" path="title" type="text" class="form:input-large"/>
+								<form:errors path="title" cssClass="text-danger"/>
+								</div>
+						</div>
+						
+						<div class="form-group">
+							<label class="control-label col-lg-2 col-lg-2" for="responses[0]">
+							Opis:
+							</label>
+									<div class="col-lg-10">
+									<form:input id="description" path="description" type="text" class="form:input-large"/>
+									<form:errors path="description" cssClass="text-danger"/>
+									</div>
+						</div>
+						
+						
+					<div class="form-group">
+						<div class="col-lg-offset-2 col-lg-10">
+						<input type="submit" id="btnAdd" class="btn btn-primary" value ="Dodaj"/>
+						</div>
+					</div>
+				</fieldset>
+			</form:form>
+		</section>
+
 
 </body>
 </html>

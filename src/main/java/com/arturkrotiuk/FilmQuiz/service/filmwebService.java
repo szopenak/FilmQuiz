@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.arturkrotiuk.FilmQuiz.domain.Movie;
 
-public interface filmwebService {
+public interface FilmwebService {
 	List <Movie> getKnownFilms();
 	List <Movie> getKnownFilms(int number);
 }
