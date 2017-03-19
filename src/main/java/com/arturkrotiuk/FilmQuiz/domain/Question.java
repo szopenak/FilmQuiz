@@ -1,12 +1,21 @@
 package com.arturkrotiuk.FilmQuiz.domain;
 
-import org.apache.commons.fileupload.FileItem;
+import java.sql.Blob;
 
 public class Question {
 	private String sentence;
 	private String [] responses;
 	private int correct;
-	private FileItem image;
+	private String url;
+	private Blob img;
+
+	public String getUrl() {
+		return url;
+	}
+	public void setUrl(String url) {
+		this.url = url;
+	}
+
 	public String getSentence() {
 		return sentence;
 	}
@@ -18,18 +27,6 @@ public class Question {
 	}
 	public void setResponses(String[] responses) {
 		this.responses = responses;
-	}
-	public int getCorrect() {
-		return correct;
-	}
-	public void setCorrect(int correct) {
-		this.correct = correct;
-	}
-	public FileItem getImage() {
-		return image;
-	}
-	public void setImage(FileItem image) {
-		this.image = image;
 	}
 	
 	public Question () {

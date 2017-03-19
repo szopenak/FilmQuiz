@@ -47,12 +47,20 @@ pageEncoding="UTF-8" %>
 		  </div>
 		</nav>
 		
-		<div class="mainColor2 container">
-		<h1 id="title">Welcome on Filmquiz webpage.</h1>
-		<hr>
-		<p>I always have problem to recognize famous actors, so I've made simple quiz-page. It's made only for fun and education - I do not own any of presented resources. <p>
-		<h2>All images and information are from www.filmweb.pl<h2>
-		</div>
+	
+		  	<c:forEach items="${list}" var="quiz">
+		  	<div class="col-sm-6 col-md-4 col-lg-3 col-xs-12 ">
+	
+		    <div class="thumbnail mainColor2">
+		      <img src=" ${quiz.img}" alt="Couldn't load the image" class="thumbImg">
+		      <div class="caption">
+		        <h3>${quiz.name}</h3>
+		        <p>${quiz.description}</p>
+		        <p><a href=" ${quiz.link}" class="btn accentColor " role="button">Start!</a></p>
+		      </div>
+		    </div>
+		    </div>
+		    </c:forEach>
 	
 	
 	</body>

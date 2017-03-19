@@ -22,7 +22,7 @@ pageEncoding="UTF-8" %>
 		<title>FilmQuiz</title>
 	</head>
 
-	<body class = "mainColor3">
+	<body class="mainColor3">
 		<nav class="navbar mainColor1">
 		  <div class="container-fluid">
 		    <div class="navbar-header">
@@ -47,13 +47,54 @@ pageEncoding="UTF-8" %>
 		  </div>
 		</nav>
 		
-		<div class="mainColor2 container">
-		<h1 id="title">Welcome on Filmquiz webpage.</h1>
-		<hr>
-		<p>I always have problem to recognize famous actors, so I've made simple quiz-page. It's made only for fun and education - I do not own any of presented resources. <p>
-		<h2>All images and information are from www.filmweb.pl<h2>
+		
+		<div>
+		
+		<div class=" image-wrapper mainColor2">
+			<h1 id="title">${title} <hr></h1>
+	      	<img src="${question.url}" alt="Actor image" id="question-image">
+	      	<div class = "question">
+		      	<p id="question">${question.sentence} <hr> </p>
+		      	
+		    	<button id="choice1" class="btn btn-default">${question.responses[0]}</button>
+		    	<button id="choice2" class="btn btn-default">${question.responses[1]}</button>
+		    	<button id="choice3" class="btn btn-default">${question.responses[2]}</button>
+		    	<button id="choice4" class="btn btn-default">${question.responses[3]}</button>
+		    	
+	    	</div>
+	    	<div class="funtion-buttons">
+		    	<button class="btn btn-default" id="hint" data-toggle="modal" data-target="#hintModal" >
+		      	<span class="glyphicon glyphicon-question-sign"></span> Get hint!
+		      	</button>
+		      	<button class="btn accentColor" id="next">
+		      	<span class="glyphicon glyphicon-chevron-right"></span> Next!
+		      	</button>
+	      	</div>
+	  	</div>
+	  	
+	  	</div>
+	  	
+	
+	
+		<!-- HintModal -->
+		<div id="hintModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+		
+		    <!-- Modal content-->
+		    <div class="modal-content  mainColor2">
+		      <div class="modal-header">
+		        <h4 class="modal-title">Hint!</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p id="hint-message">No hint available</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn accentColor" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		
+		  </div>
 		</div>
-	
-	
+		
 	</body>
 </html>

@@ -48,12 +48,12 @@ pageEncoding="UTF-8" %>
 		</nav>
 		
 		<div class="mainColor2 container">
-		<h1 id="title">Welcome on Filmquiz webpage.</h1>
-		<hr>
-		<p>I always have problem to recognize famous actors, so I've made simple quiz-page. It's made only for fun and education - I do not own any of presented resources. <p>
-		<h2>All images and information are from www.filmweb.pl<h2>
+			<h1 id="title">Artur Krotiuk</h1>
+			<hr>
+			<p>24 years old programmer from Łódź, Polad.</p>
+			<p>Email: arturkrotiuk@gmail.com</p>
 		</div>
-	
-	
+
+
 	</body>
 </html>
