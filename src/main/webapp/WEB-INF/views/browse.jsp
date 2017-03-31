@@ -49,14 +49,19 @@ pageEncoding="UTF-8" %>
 		
 	
 		  	<c:forEach items="${list}" var="quiz">
-		  	<div class="col-sm-6 col-md-4 col-lg-3 col-xs-12 ">
+		  	<div class="col-sm-6 col-md-4 col-lg-4 col-xs-12 ">
 	
-		    <div class="thumbnail mainColor2">
+		    <div class="mainColor2 card">
+		      <div class="mask mainColor1"></div>
+
 		      <img src=" ${quiz.img}" alt="Couldn't load the image" class="thumbImg">
-		      <div class="caption">
+			  <div class = "maskDesc">
+			  	<p>${quiz.description}</p>
+		        </div>
+		      <div class="tile">
 		        <h3>${quiz.name}</h3>
-		        <p>${quiz.description}</p>
 		        <p><a href=" ${quiz.link}" class="btn accentColor " role="button">Start!</a></p>
+		        
 		      </div>
 		    </div>
 		    </div>

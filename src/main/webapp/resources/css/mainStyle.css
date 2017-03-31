@@ -132,17 +132,99 @@ a.navbar-brand {
 
 /* Thumbnail modifications */
 
-.caption > p:nth-of-type(1) {
+.tile > p:nth-of-type(1) {
 	color: white;
+	transition: 1s;
+    opacity:0;
 }
-.caption > h3 {
-	color: white;
+
 }
-.caption > p:nth-of-type(2) {
+.tile > p:nth-of-type(2) {
 	text-align: right;
+	
 }
-.thumbnail {
-	border: none;
+.card {
+	
+	z-index: 0;
+    position: relative;
+    overflow: hidden;
+    max-height: 400px;
+    min-height: 300px;
+    color: #212121;
+    border: 3px solid;   
+    border-radius: 3px;
+    margin:5px;
 }
+
+.thumbImg {
+    width:100%;
+	transition: 3s;
+    z-index: 0;
+    position: static;
+
+}
+
+.mask {
+	height: 300px;
+    width: 100%;
+	bottom: 150px;
+    background: transparent; /* For browsers that do not support gradients */
+    background: linear-gradient( black, transparent); /* Standard syntax (must be last) */
+    z-index: 1;
+    position: absolute;
+    transition: 2s ease;
+    opacity: 1;
+}
+
+.card:hover .thumbImg {
+	transform: scale(1.2,1.2);
+}
+.card:hover .mask{
+	opacity: 0.5;
+}
+
+
+.card:hover .maskDesc{
+	opacity: 1;
+	left: 40px;
+}
+
+.card:hover .tile{
+	height:100px;
+}
+.card:hover p{
+	opacity: 1;
+}
+
+.maskDesc {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	color: white;
+	z-index:1;
+	max-width:50%;
+	opacity:0.0;
+	transition: 1s ease;
+	background-color:#212121; 
+	font-size:20px;
+
+}
+
+.tile {
+  background-color: #424242;
+  position: absolute;
+  width:100%;
+  height: 65px;
+  bottom:0px;
+  left:0px;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  transition: 1s;
+  padding: 0px;
+  border-top: 3px solid #212121;
+}
+
+
 
 
