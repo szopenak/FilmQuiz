@@ -17,7 +17,7 @@ pageEncoding="UTF-8" %>
 		<link rel="stylesheet" href="/FilmQuiz/resources/css/mainStyle.css">
 		
 		<!--  Fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Atma&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	
 		<title>FilmQuiz</title>
 	</head>
@@ -64,10 +64,10 @@ pageEncoding="UTF-8" %>
 	    	</div>
 	    	<div class="funtion-buttons">
 		    	<button class="btn btn-default" id="hint" data-toggle="modal" data-target="#hintModal" >
-		      	<span class="glyphicon glyphicon-question-sign"></span> Get hint!
+		      	Get hint!<span class="glyphicon glyphicon-question-sign"></span> 
 		      	</button>
 		      	<button class="btn accentColor" id="next">
-		      	<span class="glyphicon glyphicon-chevron-right"></span> Next!
+		      	Next!<span class="glyphicon glyphicon-chevron-right"></span>
 		      	</button>
 	      	</div>
 	  	</div>

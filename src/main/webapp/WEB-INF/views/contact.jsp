@@ -17,8 +17,8 @@ pageEncoding="UTF-8" %>
 		<link rel="stylesheet" href="/FilmQuiz/resources/css/mainStyle.css">
 		
 		<!--  Fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
-	
+		<link href='http://fonts.googleapis.com/css?family=Atma&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		
 		<title>FilmQuiz</title>
 	</head>
 

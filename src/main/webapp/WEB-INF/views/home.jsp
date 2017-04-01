@@ -17,7 +17,7 @@ pageEncoding="UTF-8" %>
 		<link rel="stylesheet" href="/FilmQuiz/resources/css/mainStyle.css">
 		
 		<!--  Fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Atma&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	
 		<title>FilmQuiz</title>
 	</head>
@@ -50,9 +50,10 @@ pageEncoding="UTF-8" %>
 		<div class="mainColor2 container">
 		<h1 id="title">Welcome on Filmquiz webpage.</h1>
 		<hr>
-		<p>I always have problem to recognize famous actors, so I've made simple quiz-page. It's made only for fun and education - I do not own any of presented resources. <p>
-		<h2>All images and information are from www.filmweb.pl<h2>
+		<h3>I always have problem to recognize famous actors, so I've made simple quiz-page. It's made only for fun and education - I do not own any of presented resources. </h3>
+		<h2>All images and information are from www.filmweb.pl</h2>
 		</div>
+		
 	
 	
 	</body>
